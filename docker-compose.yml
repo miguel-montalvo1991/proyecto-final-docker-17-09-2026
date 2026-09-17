@@ -43,7 +43,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: ${DB_NAME}
     ports:
-      - "3000:3000"
+      - "3001:3000"
     depends_on:
       db:
         condition: service_healthy   # la API espera a que Postgres esté "healthy", no solo "iniciado"
